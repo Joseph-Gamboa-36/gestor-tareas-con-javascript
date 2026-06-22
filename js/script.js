@@ -108,3 +108,6 @@ function actualizarContadores() {
    }
 
 }
+document.getElementById("mensajeError");
+document.getElementById(btnAgregar);
+document.getElementById("year").textContent =new Date().getFullYear();
