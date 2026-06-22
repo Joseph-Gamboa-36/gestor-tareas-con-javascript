@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller DOM - Gestor de actividades</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Gestor de Actividades Académicas</h1>
+        <p class="descripcion">
+            Agrega las ACtividades pendientes, márcalas como realizadas o eliminalas
+        </p>
+
+        <div class="formulario">
+            <input type="text" id="actividadInput" placeholder="Ejemplo: Entregar taller Javascript">
+            <button id="btnAgregar">Agregar</button>
+        </div>
+
+        <p id="mensajeError" class="mensaje-error"></p>
+
+        <div class="resumen">
+            <p>Total: <span id="totalActividades"> 0</span></p>
+            <p>Realizadas: <span id="totalActividadesRealizadas"> 0</span></p>
+            <p>Pendientes: <span id="totalActividadesPendientes"> 0</span></p>
+        </div>
+
+        <h2>Lista de actividades</h2>
+
+        <p id="mensajeVacio" class="vacia">No hay actividades registradas.</p>
+
+        <ul id="listaActividades"></ul>
+        
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
